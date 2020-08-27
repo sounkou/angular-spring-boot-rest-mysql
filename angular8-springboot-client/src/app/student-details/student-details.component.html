@@ -1,0 +1,21 @@
+<h2>Student Details</h2> 
+
+<hr/>
+<div *ngIf="student">
+  <div>
+    <label><b>Prenom: </b></label> {{student.firstName}}
+  </div>
+  <div>
+    <label><b>Nom: </b></label> {{student.lastName}}
+  </div>
+  <div>
+    <label><b>Email: </b></label> {{student.email}}
+  </div>
+  <div>
+    <label><b>Branche: </b></label> {{student.branch}}
+  </div>  
+</div>
+
+<br>
+<br>
+<button (click)="list()" class="btn btn-primary">Retour vers la liste </button><br>
